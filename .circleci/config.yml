@@ -6,4 +6,5 @@ jobs:
     steps:
       - checkout
       - run: npm i
-      - run: npm t
+      - run: npm t -- --coverage -maxWorkers=2
+      - run: codecov@3.0.2
