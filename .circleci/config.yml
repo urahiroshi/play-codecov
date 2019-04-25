@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run: npm i
       - run: npm t -- --coverage -maxWorkers=2
-      - run: codecov@3.0.2
+      - run: npx codecov@3.0.2
